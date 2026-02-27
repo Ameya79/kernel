@@ -1,0 +1,14 @@
+streamlit
+Pillow
+pdf2docx
+docx2pdf
+moviepy
+pandas
+openpyxl
+markdown2
+html2text
+xmltodict
+pyyaml
+toml
+pydub
+soundfile

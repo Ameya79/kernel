@@ -1,0 +1,17 @@
+[
+    {
+        "product": "Laptop",
+        "price": 999.99,
+        "in_stock": true
+    },
+    {
+        "product": "Phone",
+        "price": 599.99,
+        "in_stock": true
+    },
+    {
+        "product": "Tablet",
+        "price": 399.99,
+        "in_stock": false
+    }
+]
