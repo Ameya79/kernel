@@ -13,7 +13,7 @@
 
 ---
 
-**Live App:** [Insert your deployed link here]
+**Live App:** [https://kernel-mma9ona2dmudgjvekngk9l.streamlit.app/]
 
 ---
 
@@ -137,3 +137,4 @@ Your app will be available at `https://your-app-name.streamlit.app`.
 ---
 
 Built with Python and Streamlit — by [Ameya Kulkarni](https://www.linkedin.com/in/ameya-kulkarni-a31b74246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
