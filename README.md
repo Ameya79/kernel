@@ -15,22 +15,18 @@
 
 **Live App:** [Insert your deployed link here]
 
-> The hosted app runs on Streamlit Cloud and may take 10-20 seconds to wake up if it has been idle. This is expected behavior — the platform spins down free-tier apps after a period of inactivity.
-
 ---
 
 ## What it does
 
-Kernel is a browser-based file utility. You drag and drop a file, choose what you want it to become, and download the result. No accounts, no data collection, no external servers. Everything is processed on the machine running the app.
-
-It handles four categories of conversion:
+Kernel is a browser-based file converter. Drop a file, pick a target format, download the result. No accounts, no uploads to external servers.
 
 - **Images** — change format, preserve quality
-- **Documents & Text** — convert between PDF, DOCX, Markdown, HTML, and plain text
+- **Documents & Text** — convert between PDF, DOCX, Markdown, HTML, plain text
 - **Video & Audio** — extract audio from video, change container formats
-- **Data & Configs** — move data between spreadsheet, JSON, XML, YAML, and TOML formats
+- **Data & Configs** — move data between CSV, JSON, XML, YAML, TOML and more
 
-It also has a dedicated **Image Compressor** tab with a quality slider and real-time file size savings metrics.
+There is also an **Image Compressor** tab with a quality slider that shows how much space you saved.
 
 ---
 
@@ -133,10 +129,10 @@ Your app will be available at `https://your-app-name.streamlit.app`.
 
 | Situation | Detail |
 |---|---|
-| DOCX → PDF fails locally | Requires Microsoft Word on Windows. Works automatically on cloud via LibreOffice. |
-| Large video files | Audio extraction from long videos can take 1-2 minutes. The spinner will show while it processes. |
-| Rare video codecs (rm, rmvb, vob) | Require ffmpeg installed locally. Works on Streamlit Cloud by default. |
-| First load on hosted version | May take 10-20 seconds to wake from sleep mode. |
+| DOCX → PDF fails locally | Requires Microsoft Word on Windows. On cloud, LibreOffice handles it. |
+| Large video files | Audio extraction from long videos can take a couple of minutes. |
+| Rare video codecs (rm, rmvb, vob) | Require ffmpeg installed locally. |
+| First load on hosted version | May take 10-20 seconds if the app was idle. |
 
 ---
 
