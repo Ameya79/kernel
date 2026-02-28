@@ -148,7 +148,8 @@ def convert_document(in_path: str, out_path: str, target_ext: str, original_ext:
 def convert_media(in_path: str, out_path: str, target_ext: str):
     """Extracts audio from video or converts video/audio formats using moviepy."""
     is_audio_out = target_ext in ["mp3", "wav", "ogg", "flac", "aac", "m4a", "wma", "aiff", "alac", "amr"]
-    clip = VideoFileClip(in_path) if not in_path.endswith(is_audio_out) else AudioFileClip(in_path)
+    audio_exts = tuple("." + ext for ext in ["mp3", "wav", "ogg", "flac", "aac", "m4a", "wma", "aiff", "alac", "amr"])
+    clip = VideoFileClip(in_path) if not in_path.lower().endswith(audio_exts) else AudioFileClip(in_path)
     
     try:
         if isinstance(clip, VideoFileClip):
