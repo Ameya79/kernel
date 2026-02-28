@@ -78,10 +78,7 @@ kernel/
     ├── sample_data.json
     ├── sample_document.md
     └── sample_image.png
-```
-
-> Do not commit `venv/`, `__pycache__/`, or `test_files/` to the repository.
-
+```
 ---
 
 ## Running locally
