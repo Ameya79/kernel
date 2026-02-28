@@ -259,7 +259,7 @@ with st.sidebar:
     if Path("logo.png").exists():
         st.image("logo.png", width=64)
     st.markdown("## Kernel")
-    st.caption("Universal file converter. 66 formats.")
+    st.caption("Universal file converter. 66 formats. Zero permanent cloud storage.")
     st.divider()
     
     with st.expander("How to use", expanded=True):
@@ -309,6 +309,16 @@ with st.sidebar:
                     use_container_width=True,
                 )
 
+    st.divider()
+    st.markdown(
+        """
+        <div style="text-align: center; font-size: 0.85rem; opacity: 0.8;">
+            Built by <a href="https://www.linkedin.com/in/ameya-kulkarni-a31b74246" target="_blank" style="color: inherit;"><b>Ameya Kulkarni</b></a>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 # Main Header — logo and title aligned with flexbox
 import base64
 
@@ -331,7 +341,7 @@ if Path("logo.png").exists():
     )
 else:
     st.title("Kernel")
-st.write("Convert files between 66 formats. Drop a file, pick a target, done.")
+st.markdown("**The privacy-first file converter.** Convert across 66 formats instantly. No accounts, no data harvesting, and zero permanent cloud storage—your files are processed and deleted.")
 
 # Application Tabs
 tab1, tab2 = st.tabs(["Universal Converter", "Image Compressor"])
